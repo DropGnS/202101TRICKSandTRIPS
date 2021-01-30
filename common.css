@@ -1,0 +1,177 @@
+/* ---------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------Mise en forme de la partie corps-------------------------------------*/
+/* ---------------------------------------------------------------------------------------------------------*/
+body {
+    margin: 0;
+    padding:0;
+    border:0;
+    /*font-family: 'Dancing Script', cursive;*/ 
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  * {
+    box-sizing: border-box;
+  }
+
+/* ---------------------------------------------------------------------------------------------------------*/
+/* ----------------------------------Mise en forme de la partie Responsive----------------------------------*/
+/* ---------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width: 600px) {
+  .topnav.responsive .icon {display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+/* ---------------------------------------------------------------------------------------------------------*/
+/* --------------------------------------Organisation Colonnes/lignes---------------------------------------*/
+/* ---------------------------------------------------------------------------------------------------------*/
+  [class*="col-"] {
+  float: left;
+  padding: 15px;
+  }
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+
+/* ---------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------Mise en forme de la partie entête------------------------------------*/
+/* ---------------------------------------------------------------------------------------------------------*/
+
+/* ------------------Mise en forme de la partie principale------------------*/
+/*.topnav {
+  overflow: hidden;
+  background-color: #333;
+  display: flex;
+  flex-direction: row;
+}*/
+.topnav ul {
+  margin: 0px;
+  padding: 0px;
+  background-color: #333;
+  list-style:none;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav ul {
+  display: flex; /*1*/
+  flex-direction : row; /*2*/
+  justify-content: left; /*3*/
+  @media(max-width: 450px) {
+    flex-flow: column wrap; /*4*/
+  } 
+}
+
+.logo {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown { /*1*/
+  position: ;
+}
+
+.dropdown:hover > .dropcontent { /*2*/
+  display: flex;
+}
+
+.topnav .dropcontent { /*3*/
+  display: none;
+  flex-flow: column wrap;
+  min-width: 100px;
+  position: absolute;
+  background: dodgerblue;
+
+}
+.dropcontent { /*5*/
+  top: 0px;
+  left: 100%;
+  background: #1e76d6;
+}
+
+/* ---------------------------------------------------------------------------------------------------------*/
+/* ---------------------------------Mise en forme de la partie pied de page---------------------------------*/
+/* ---------------------------------------------------------------------------------------------------------*/
+
+/* ------------------Mise en forme de la partie principale------------------*/
+.footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------Mise en forme  TEMP--------------------------------------------*/
+/* ---------------------------------------------------------------------------------------------------------*/
+
+  
+.aside {
+background-color: #33b5e5;
+padding: 15px;
+color: #ffffff;
+text-align: center;
+font-size: 14px;
+box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+
+
+          .main{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.mobile-container {
+  max-width: 500px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+.desk-container {
+  max-width: 800px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
